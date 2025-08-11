@@ -1,6 +1,6 @@
 # Создать образ на основе базового слоя,
 # который содержит файлы ОС и интерпретатор Python 3.12.
-FROM python:3.12
+FROM python:3.12-slim
 
 RUN apt-get update && apt-get install -y \
     python3-distutils \
